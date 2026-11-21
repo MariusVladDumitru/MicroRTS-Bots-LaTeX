@@ -17,7 +17,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2006e8cf-d4aa-4cf4-986a-c98b09e69e68" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Notes/tex/IdeiDeBaza.tex" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Notes/tex/IdeiDeBaza.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,67 +32,67 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000043567705488" />
-      <entry key="MS500" value="1.1212218480442546" />
-      <entry key="S2" value="2.6770045378396885" />
-      <entry key="S5" value="5.691603694270347" />
-      <entry key="S10" value="10.129837531628691" />
-      <entry key="S30" value="19.338507128567926" />
-      <entry key="S60" value="27.338341070006397" />
-      <entry key="M2" value="45.49121728801424" />
-      <entry key="M5" value="94.11612058246034" />
-      <entry key="M10" value="142.6407763046314" />
-      <entry key="M15" value="176.9313794093042" />
-      <entry key="M30" value="309.69644535768737" />
-      <entry key="H1" value="619.4300465473356" />
-      <entry key="H2" value="1017.9044950822692" />
-      <entry key="H4" value="1352.8816041800378" />
-      <entry key="D1" value="1744.638071559681" />
-      <entry key="W1" value="1825.1471307157162" />
+      <entry key="MS100" value="1.0000000022154893" />
+      <entry key="MS500" value="1.021926751394293" />
+      <entry key="S2" value="1.640529542210001" />
+      <entry key="S5" value="2.485473154211228" />
+      <entry key="S10" value="3.0700029762756245" />
+      <entry key="S30" value="3.638101809442208" />
+      <entry key="S60" value="3.8119846004278117" />
+      <entry key="M2" value="4.0206919784217305" />
+      <entry key="M5" value="8.166719340504454" />
+      <entry key="M10" value="29.93776995404116" />
+      <entry key="M15" value="71.67145341612652" />
+      <entry key="M30" value="245.0055108589631" />
+      <entry key="H1" value="608.1458490748571" />
+      <entry key="H2" value="1129.8553167496448" />
+      <entry key="H4" value="1627.8535905886708" />
+      <entry key="D1" value="2274.552448863215" />
+      <entry key="W1" value="2415.485092893939" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="5.8029944703838235E-185" />
-      <entry key="S30" value="3.871542688485457E-62" />
-      <entry key="S60" value="1.9676328841235546E-31" />
-      <entry key="M2" value="4.445429966879767E-16" />
-      <entry key="M5" value="7.888079952827954E-7" />
-      <entry key="M10" value="0.0011656025531998346" />
-      <entry key="M15" value="0.014693938387906108" />
-      <entry key="M30" value="0.21454357013005682" />
-      <entry key="H1" value="0.9412651076449738" />
-      <entry key="H2" value="2.106533213273828" />
-      <entry key="H4" value="3.219818650979942" />
-      <entry key="D1" value="4.64110136706414" />
-      <entry key="W1" value="4.946938557424019" />
+      <entry key="S2" value="1.4825528240271604E-237" />
+      <entry key="S5" value="1.9094314873066842E-95" />
+      <entry key="S10" value="5.29457805661495E-48" />
+      <entry key="S30" value="3.1870636641971615E-16" />
+      <entry key="S60" value="3.038942998363872E-8" />
+      <entry key="M2" value="3.006608690074073E-4" />
+      <entry key="M5" value="0.07572031560926151" />
+      <entry key="M10" value="0.49469210492363835" />
+      <entry key="M15" value="0.9510979909894789" />
+      <entry key="M30" value="1.9373163734692687" />
+      <entry key="H1" value="3.159002136860658" />
+      <entry key="H2" value="4.72345982129345" />
+      <entry key="H4" value="6.280216554565384" />
+      <entry key="D1" value="8.428689995399477" />
+      <entry key="W1" value="8.914821607042013" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9395267581025786" />
-      <entry key="MS500" value="1.1066403095869888" />
-      <entry key="S2" value="2.665856499815689" />
-      <entry key="S5" value="5.6812827969595086" />
-      <entry key="S10" value="10.118717471259053" />
-      <entry key="S30" value="19.328930373381382" />
-      <entry key="S60" value="27.331392648783496" />
-      <entry key="M2" value="45.48605361763158" />
-      <entry key="M5" value="94.1110172782252" />
-      <entry key="M10" value="142.63630766619698" />
-      <entry key="M15" value="176.94065614501437" />
-      <entry key="M30" value="309.90580735823806" />
-      <entry key="H1" value="620.3660785117553" />
-      <entry key="H2" value="1020.0066684699425" />
-      <entry key="H4" value="1356.098492092451" />
-      <entry key="D1" value="1749.278535536088" />
-      <entry key="W1" value="1830.0939738044958" />
+      <entry key="MS100" value="0.8827029982872991" />
+      <entry key="MS500" value="0.9967062543048438" />
+      <entry key="S2" value="1.628679094085318" />
+      <entry key="S5" value="2.4777089354385966" />
+      <entry key="S10" value="3.065148427233343" />
+      <entry key="S30" value="3.6361839606004014" />
+      <entry key="S60" value="3.8109799303212335" />
+      <entry key="M2" value="4.020334531150804" />
+      <entry key="M5" value="8.239962283157311" />
+      <entry key="M10" value="30.426259465935875" />
+      <entry key="M15" value="72.6137372563741" />
+      <entry key="M30" value="246.93129606633227" />
+      <entry key="H1" value="611.2938108516959" />
+      <entry key="H2" value="1134.5701915490813" />
+      <entry key="H4" value="1634.1281706735108" />
+      <entry key="D1" value="2282.9799195307255" />
+      <entry key="W1" value="2424.399731726869" />
     </decayedShown>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3MQ6Q9UXvQICRC7YHilO1qP3FkV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -113,6 +113,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
+    "full.screen.before.presentation.mode": "false",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/home/marius-vlad/Projects/MicroRTS-Bots-LaTeX",
     "node.js.detected.package.eslint": "true",
@@ -123,22 +124,10 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Latex"
+    "settings.editor.selected.configurable": "editor.preferences.smartKeys"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration default="true" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
-      <texify-bibtex>
-        <compiler />
-        <compiler-path />
-        <compiler-arguments />
-        <envs />
-        <main-file />
-        <aux-dir />
-        <latex-distribution>PROJECT_SDK</latex-distribution>
-      </texify-bibtex>
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <steps>
         <latexmkCompile id="e24422e8-8644-4fc7-8544-eb80bc2a3b44" />
@@ -147,10 +136,10 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SelectedDebugProfileService"><![CDATA[{
-  "profileIdByStamp": [],
-  "modificationCount": 1
-}]]></component>
+  <component name="SelectedDebugProfileService">{
+  &quot;profileIdByStamp&quot;: [],
+  &quot;modificationCount&quot;: 1
+}</component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2006e8cf-d4aa-4cf4-986a-c98b09e69e68" name="Changes" comment="" />

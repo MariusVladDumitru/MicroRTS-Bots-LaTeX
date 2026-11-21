@@ -3,13 +3,16 @@
 
 % Packages
 \usepackage{hyperref}
+\usepackage{graphics}
+\graphicspath{ {../images/} }
 
 \title{Idei De bază pentru teza de Dizertație}
 \author{Marius-Vlad Dumitru}
 % Document
 \begin{document}
 \maketitle
-\section{Motivație. Punctul de plecare inițial.}
+
+\section{Motivație.}
 Am pornit de la ideea de Reinforcement Learning/Deep Reinforcement Learning.
 
 La BIOSINF am studiat mai putin despre RL/DRL, iar pentru ca educația primita de la masterul BIOSINF să fie completă("Round Trip") mi s-a părut interesant să aleg o temă de disertație bazată de RL/DRL.
@@ -25,9 +28,9 @@ M-am orientat către un joc de strategie, de tip RTS(Real Time Strategy), întru
 
 Inițial am vrut să folosesc unul din jocurile de la Blizzard, fie Starcraft, Starcraft 2 sau Warcraft 3. Din păcate niciunul din ele nu oferă o interfață nativă în Python pentru controlul extern al jucătorilor.
 
-Starcraft 2 oferă o interfață pentru controlul extern al jucătorilor cu ajutorul proiectului [S2Client-Proto](https://github.com/blizzard/s2client-proto).
+Starcraft 2 oferă o interfață pentru controlul extern al jucătorilor cu ajutorul proiectului \href{https://github.com/blizzard/s2client-proto}{S2Client-Proto}
 
-Starcraft Broodwar oferă o interfață pentru controlul extern al jucătorilor cu ajutorul proiectului [BWAPI](https://bwapi.github.io/) dar acesta funcționează numai pentru versiunea 1.6.
+Starcraft Broodwar oferă o interfață pentru controlul extern al jucătorilor cu ajutorul proiectului \href{https://bwapi.github.io/}{BWAPI} dar acesta funcționează numai pentru versiunea 1.6.
 
 Deși mi-ar fi plăcut foarte mult să folosesc Starcraft/Starcraft 2/Warcraft 3 pentru realizarea experimentelor, am realizat că aceste jocuri sunt mult prea complexe pentru nivelul meu de cunoștințe în RL/DRL. Prin urmare am fost nevoit să mă orientez către altceva.
 
@@ -43,6 +46,34 @@ Am ales acest joc din următoarele motive:
 \item Este special construit pentru experimente de tip RL/DRL.
 \end{enumerate}
 
+\section{Setup-ul experimental}
+\subsection{Ingredientele Setup-ului experimental}
+Setup-ul experimental este format din 3 ingrediente:
+\begin{enumerate}
+\item \textbf{Jocul MicroRTS sub formă de fișier .jar(MicroRTS.jar)}
+\item \textbf{Managerul}
+\item Agenții.
+\end{enumerate}
+
+Cele 3 elemente ale setup-ului experimental comunică între ele prin rețea, adică protocolul TCP/UDP/TCP+UDP-IP (nu știu acum daca folosesc doar TCP, doar UDP sau TCP+UDP, dar știu sigur că vreau ca cele 3 elemente să comunice exclusiv prin rețea), pe baza modelului \textbf{client-server}, folosind sockets.
+
+\includegraphics{ElementsCommunication}
+
+% Descrierea celor 3 elemente este aici, in acest enumerate.
+% Doar descriere succinta, ideile de bază
+\begin{enumerate}
+\item \textbf{Jocul MicroRTS.}
+
+Scurta Descriere MicroRTS
+
+\item \textbf{Managerul}
+
+Scurta Descriere Manager
+
+\item \textbf{Agenții}
+
+Scurta Descriere Agenti
+\end{enumerate}
 
 % Some ideas that i don't want to forget
 %Aici e ideile mari boss
