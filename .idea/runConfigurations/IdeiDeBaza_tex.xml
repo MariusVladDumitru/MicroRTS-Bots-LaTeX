@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="ArchitectureIdea.tex" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Notes">
+  <configuration default="false" name="IdeiDeBaza.tex" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Notes">
     <option name="beforeRunCode" />
-    <option name="mainFilePath" value="$PROJECT_DIR$/docs/Notes/ArchitectureIdea.tex" />
+    <option name="mainFilePath" value="$PROJECT_DIR$/docs/Notes/IdeiDeBaza.tex" />
     <option name="outputPath" value="$PROJECT_DIR$/out" />
     <steps>
       <latexmkCompile id="e24422e8-8644-4fc7-8544-eb80bc2a3b44">

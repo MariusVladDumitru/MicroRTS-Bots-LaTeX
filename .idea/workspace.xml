@@ -1,11 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;last_opened_file_path&quot;: &quot;/home/marius-vlad/Projects/MicroRTS-Bots-LaTeX&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Housekeeping/OptionsDialog/SelectedPageId/@EntryValue" value="CppFormatterOtherPage" type="string" />
+  </component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2006e8cf-d4aa-4cf4-986a-c98b09e69e68" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/Notes/IdeiDeBaza.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/ArchitectureIdea_tex.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Notes/ArchitectureIdea.tex" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0000000000008253" />
+      <entry key="MS500" value="1.0038311679843304" />
+      <entry key="S2" value="1.2487899590791822" />
+      <entry key="S5" value="1.5776757199561984" />
+      <entry key="S10" value="2.0525436327809503" />
+      <entry key="S30" value="8.277253165364247" />
+      <entry key="S60" value="17.777183717223792" />
+      <entry key="M2" value="31.799394879142223" />
+      <entry key="M5" value="83.39055063225966" />
+      <entry key="M10" value="186.3936385187358" />
+      <entry key="M15" value="272.8424724792299" />
+      <entry key="M30" value="438.6821651253151" />
+      <entry key="H1" value="594.0860741812921" />
+      <entry key="H2" value="711.8888400734746" />
+      <entry key="H4" value="787.0616028116632" />
+      <entry key="D1" value="860.8248843943913" />
+      <entry key="W1" value="874.6578584410811" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="1.1353132688150045E-110" />
+      <entry key="S5" value="1.0520739938977256E-44" />
+      <entry key="S10" value="1.0257065827505084E-22" />
+      <entry key="S30" value="4.6810259377491496E-8" />
+      <entry key="S60" value="2.1635710840630108E-4" />
+      <entry key="M2" value="0.014726993188330824" />
+      <entry key="M5" value="0.19757239563209492" />
+      <entry key="M10" value="0.5445253051053484" />
+      <entry key="M15" value="0.8229133681138381" />
+      <entry key="M30" value="1.4370141049130318" />
+      <entry key="H1" value="2.1938594797594786" />
+      <entry key="H2" value="2.887743073471737" />
+      <entry key="H4" value="3.3762924360065556" />
+      <entry key="D1" value="3.8849754130617664" />
+      <entry key="W1" value="3.983271456532989" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.3337667116165652E-8" />
+      <entry key="MS500" value="0.030370670140670734" />
+      <entry key="S2" value="0.6515519565528975" />
+      <entry key="S5" value="1.2724478697716304" />
+      <entry key="S10" value="1.885316657119575" />
+      <entry key="S30" value="8.213672999823501" />
+      <entry key="S60" value="17.740259282101537" />
+      <entry key="M2" value="31.788655760973985" />
+      <entry key="M5" value="83.56818586518264" />
+      <entry key="M10" value="186.92021437464058" />
+      <entry key="M15" value="273.64913032800933" />
+      <entry key="M30" value="440.106994057193" />
+      <entry key="H1" value="596.2719776105462" />
+      <entry key="H2" value="714.7719124621044" />
+      <entry key="H4" value="790.4353417728796" />
+      <entry key="D1" value="864.7093988816328" />
+      <entry key="W1" value="878.6410631089228" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3MQ6Q9UXvQICRC7YHilO1qP3FkV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "CidrDebugProfileConversion": "true",
+    "CidrDebugProfileConversion262": "true",
+    "LaTeX.ArchitectureIdea.tex.executor": "Run",
+    "LaTeX.IdeiDeBaza.tex.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/marius-vlad/Projects/MicroRTS-Bots-LaTeX",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Latex"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify-bibtex>
@@ -26,5 +148,22 @@
       </steps>
       <method v="2" />
     </configuration>
+  </component>
+  <component name="SelectedDebugProfileService"><![CDATA[{
+  "profileIdByStamp": [],
+  "modificationCount": 1
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2006e8cf-d4aa-4cf4-986a-c98b09e69e68" name="Changes" comment="" />
+      <created>1795270426041</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1795270426041</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
