@@ -1,0 +1,3 @@
+# Don't track the out folder
+# out folder contains intermediary compiled files AND the final .pdf file.
+out
