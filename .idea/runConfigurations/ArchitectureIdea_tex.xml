@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ArchitectureIdea.tex" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Notes">
+    <option name="beforeRunCode" />
+    <option name="mainFilePath" value="$PROJECT_DIR$/docs/Notes/ArchitectureIdea.tex" />
+    <option name="outputPath" value="$PROJECT_DIR$/out" />
+    <steps>
+      <latexmkCompile id="e24422e8-8644-4fc7-8544-eb80bc2a3b44">
+        <option name="latexmkCompileMode" value="pdfLaTeX (PDF)" />
+      </latexmkCompile>
+      <pdfViewer id="1aa600ce-6f14-473d-bf3d-64533eebd888">
+        <selectedOptions>
+          <option name="viewer.requireFocus" />
+        </selectedOptions>
+      </pdfViewer>
+    </steps>
+    <method v="2" />
+  </configuration>
+</component>
