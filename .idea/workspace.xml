@@ -17,6 +17,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2006e8cf-d4aa-4cf4-986a-c98b09e69e68" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Notes/images/empty.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/Notes/tex/IdeiDeBaza.tex" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Notes/tex/IdeiDeBaza.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,61 +33,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000022154893" />
-      <entry key="MS500" value="1.021926751394293" />
-      <entry key="S2" value="1.640529542210001" />
-      <entry key="S5" value="2.485473154211228" />
-      <entry key="S10" value="3.0700029762756245" />
-      <entry key="S30" value="3.638101809442208" />
-      <entry key="S60" value="3.8119846004278117" />
-      <entry key="M2" value="4.0206919784217305" />
-      <entry key="M5" value="8.166719340504454" />
-      <entry key="M10" value="29.93776995404116" />
-      <entry key="M15" value="71.67145341612652" />
-      <entry key="M30" value="245.0055108589631" />
-      <entry key="H1" value="608.1458490748571" />
-      <entry key="H2" value="1129.8553167496448" />
-      <entry key="H4" value="1627.8535905886708" />
-      <entry key="D1" value="2274.552448863215" />
-      <entry key="W1" value="2415.485092893939" />
+      <entry key="MS100" value="1.0000165823956266" />
+      <entry key="MS500" value="1.1242950755895447" />
+      <entry key="S2" value="2.437713015495917" />
+      <entry key="S5" value="4.9018426992953525" />
+      <entry key="S10" value="8.578644671069295" />
+      <entry key="S30" value="20.65122806162972" />
+      <entry key="S60" value="30.946967705611097" />
+      <entry key="M2" value="41.6867088299515" />
+      <entry key="M5" value="63.27877444520689" />
+      <entry key="M10" value="101.7974625683565" />
+      <entry key="M15" value="140.16544372870592" />
+      <entry key="M30" value="238.46143463195196" />
+      <entry key="H1" value="464.476129730389" />
+      <entry key="H2" value="944.3169018457037" />
+      <entry key="H4" value="1556.1837088320988" />
+      <entry key="D1" value="2540.4087214379992" />
+      <entry key="W1" value="2780.381188553129" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="1.4825528240271604E-237" />
-      <entry key="S5" value="1.9094314873066842E-95" />
-      <entry key="S10" value="5.29457805661495E-48" />
-      <entry key="S30" value="3.1870636641971615E-16" />
-      <entry key="S60" value="3.038942998363872E-8" />
-      <entry key="M2" value="3.006608690074073E-4" />
-      <entry key="M5" value="0.07572031560926151" />
-      <entry key="M10" value="0.49469210492363835" />
-      <entry key="M15" value="0.9510979909894789" />
-      <entry key="M30" value="1.9373163734692687" />
-      <entry key="H1" value="3.159002136860658" />
-      <entry key="H2" value="4.72345982129345" />
-      <entry key="H4" value="6.280216554565384" />
-      <entry key="D1" value="8.428689995399477" />
-      <entry key="W1" value="8.914821607042013" />
+      <entry key="MS500" value="8.124936631379522E-301" />
+      <entry key="S2" value="9.494126098807207E-76" />
+      <entry key="S5" value="9.794493858364462E-31" />
+      <entry key="S10" value="9.896713524379921E-16" />
+      <entry key="S30" value="9.965452270211564E-6" />
+      <entry key="S60" value="0.0031573713939878497" />
+      <entry key="M2" value="0.056934489598554926" />
+      <entry key="M5" value="0.37232536970330704" />
+      <entry key="M10" value="0.7996641334935883" />
+      <entry key="M15" value="1.0716773680868206" />
+      <entry key="M30" value="1.6152366688633608" />
+      <entry key="H1" value="2.6336339522687657" />
+      <entry key="H2" value="4.414577023176566" />
+      <entry key="H4" value="6.554555011598265" />
+      <entry key="D1" value="9.999071700135802" />
+      <entry key="W1" value="10.848645995013804" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8827029982872991" />
-      <entry key="MS500" value="0.9967062543048438" />
-      <entry key="S2" value="1.628679094085318" />
-      <entry key="S5" value="2.4777089354385966" />
-      <entry key="S10" value="3.065148427233343" />
-      <entry key="S30" value="3.6361839606004014" />
-      <entry key="S60" value="3.8109799303212335" />
-      <entry key="M2" value="4.020334531150804" />
-      <entry key="M5" value="8.239962283157311" />
-      <entry key="M10" value="30.426259465935875" />
-      <entry key="M15" value="72.6137372563741" />
-      <entry key="M30" value="246.93129606633227" />
-      <entry key="H1" value="611.2938108516959" />
-      <entry key="H2" value="1134.5701915490813" />
-      <entry key="H4" value="1634.1281706735108" />
-      <entry key="D1" value="2282.9799195307255" />
-      <entry key="W1" value="2424.399731726869" />
+      <entry key="MS100" value="0.1604439249980226" />
+      <entry key="MS500" value="0.8136948437095035" />
+      <entry key="S2" value="2.3141907759708493" />
+      <entry key="S5" value="4.827303382839862" />
+      <entry key="S10" value="8.528376111611141" />
+      <entry key="S30" value="20.616862747865024" />
+      <entry key="S60" value="30.921576716496123" />
+      <entry key="M2" value="41.72035701111324" />
+      <entry key="M5" value="63.63165994889963" />
+      <entry key="M10" value="102.58137332820505" />
+      <entry key="M15" value="141.22381213711597" />
+      <entry key="M30" value="240.06676468857137" />
+      <entry key="H1" value="467.10117402858896" />
+      <entry key="H2" value="948.7238719546472" />
+      <entry key="H4" value="1562.7325617795723" />
+      <entry key="D1" value="2550.40636560426" />
+      <entry key="W1" value="2791.229614461389" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -98,35 +99,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "CidrDebugProfileConversion": "true",
-    "CidrDebugProfileConversion262": "true",
-    "LaTeX.ArchitectureIdea.tex.executor": "Run",
-    "LaTeX.IdeiDeBaza.tex.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.RadMigrateCodeStyle": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/marius-vlad/Projects/MicroRTS-Bots-LaTeX",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
-    "settings.editor.selected.configurable": "editor.preferences.smartKeys"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;CidrDebugProfileConversion&quot;: &quot;true&quot;,
+    &quot;CidrDebugProfileConversion262&quot;: &quot;true&quot;,
+    &quot;LaTeX.ArchitectureIdea.tex.executor&quot;: &quot;Run&quot;,
+    &quot;LaTeX.IdeiDeBaza.tex.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/marius-vlad/Projects/MicroRTS-Bots-LaTeX&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.smartKeys&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <steps>

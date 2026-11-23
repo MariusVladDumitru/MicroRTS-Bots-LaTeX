@@ -46,18 +46,34 @@ Am ales acest joc din următoarele motive:
 \item Este special construit pentru experimente de tip RL/DRL.
 \end{enumerate}
 
+\section{Scopul Final}
+Urmăresc să studiez partea de RL/DRL prin efectuarea de diverse experimente folosind MicroRTS si agent de Rl/DRL care să joace meciuri în acest joc.
+
+Deci trebuie să efectuez diverse experimente.
+
 \section{Setup-ul experimental}
 \subsection{Ingredientele Setup-ului experimental}
 Setup-ul experimental este format din 3 ingrediente:
 \begin{enumerate}
 \item \textbf{Jocul MicroRTS sub formă de fișier .jar(MicroRTS.jar)}
 \item \textbf{Managerul}
-\item Agenții.
+\item \textbf{Agenții}
 \end{enumerate}
 
 Cele 3 elemente ale setup-ului experimental comunică între ele prin rețea, adică protocolul TCP/UDP/TCP+UDP-IP (nu știu acum daca folosesc doar TCP, doar UDP sau TCP+UDP, dar știu sigur că vreau ca cele 3 elemente să comunice exclusiv prin rețea), pe baza modelului \textbf{client-server}, folosind sockets.
 
-\includegraphics{ElementsCommunication}
+\includegraphics{ElementsCommunication.png}
+
+Din cauza faptului că cele 3 elemente comunică între ele prin rețea(TCP/UDP + IP), putem avea mai multe instanțe de MicroRTS-Agenți, ele formând perechi.
+
+Mai multe perechi MicroRTS-Agenti se pot conecta la același Manager pentru a rula, în paralel, mai multe experimente.
+
+Instanțele de perechi MicroRTS-Agenți nu fac schimb de informații între ele.
+
+Este un plan foarte ambition sa am multe instanțe de perechi MicroRTS-Agenți rulând în paralel. Este suficient să fac lucurile să meargă pentru o singură pereche MicroRTS-Agenți.
+
+% E o imagine care descrie treaba asta, vezi MicroRTS-Agents_Pair_Multiple_Instances.png.
+
 
 % Descrierea celor 3 elemente este aici, in acest enumerate.
 % Doar descriere succinta, ideile de bază
