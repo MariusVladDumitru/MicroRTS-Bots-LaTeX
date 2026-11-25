@@ -13,3 +13,6 @@ Ce inseamna \appendix din:
 %\include{sup1}
 
 Are legatura cu sup1
+
+# Fisierul Cod.m
+Cod.m din template-ul de latex are vre-un rol ???? Am vazut ca nu era inclus nicaieri, nefolosit.
