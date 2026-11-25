@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
     <option name="/Default/Housekeeping/OptionsDialog/SelectedPageId/@EntryValue" value="CppFormatterOtherPage" type="string" />
   </component>
   <component name="CMakeProjectFlavorService">
@@ -17,8 +18,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2006e8cf-d4aa-4cf4-986a-c98b09e69e68" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Notes/images/empty.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Notes/tex/IdeiDeBaza.tex" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Notes/tex/IdeiDeBaza.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,61 +32,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000165823956266" />
-      <entry key="MS500" value="1.1242950755895447" />
-      <entry key="S2" value="2.437713015495917" />
-      <entry key="S5" value="4.9018426992953525" />
-      <entry key="S10" value="8.578644671069295" />
-      <entry key="S30" value="20.65122806162972" />
-      <entry key="S60" value="30.946967705611097" />
-      <entry key="M2" value="41.6867088299515" />
-      <entry key="M5" value="63.27877444520689" />
-      <entry key="M10" value="101.7974625683565" />
-      <entry key="M15" value="140.16544372870592" />
-      <entry key="M30" value="238.46143463195196" />
-      <entry key="H1" value="464.476129730389" />
-      <entry key="H2" value="944.3169018457037" />
-      <entry key="H4" value="1556.1837088320988" />
-      <entry key="D1" value="2540.4087214379992" />
-      <entry key="W1" value="2780.381188553129" />
+      <entry key="MS100" value="1.5664419426478995" />
+      <entry key="MS500" value="1.892546988420539" />
+      <entry key="S2" value="1.9965517155225705" />
+      <entry key="S5" value="2.620822613031976" />
+      <entry key="S10" value="4.201653434024488" />
+      <entry key="S30" value="7.518170020014698" />
+      <entry key="S60" value="9.07226854602716" />
+      <entry key="M2" value="11.20601822640987" />
+      <entry key="M5" value="28.07809612796077" />
+      <entry key="M10" value="65.48752689768992" />
+      <entry key="M15" value="97.63574290866566" />
+      <entry key="M30" value="184.1696487805953" />
+      <entry key="H1" value="373.7397169032168" />
+      <entry key="H2" value="804.7359401011652" />
+      <entry key="H4" value="1532.6968657800533" />
+      <entry key="D1" value="3145.2767870528046" />
+      <entry key="W1" value="3617.102470557838" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="8.124936631379522E-301" />
-      <entry key="S2" value="9.494126098807207E-76" />
-      <entry key="S5" value="9.794493858364462E-31" />
-      <entry key="S10" value="9.896713524379921E-16" />
-      <entry key="S30" value="9.965452270211564E-6" />
-      <entry key="S60" value="0.0031573713939878497" />
-      <entry key="M2" value="0.056934489598554926" />
-      <entry key="M5" value="0.37232536970330704" />
-      <entry key="M10" value="0.7996641334935883" />
-      <entry key="M15" value="1.0716773680868206" />
-      <entry key="M30" value="1.6152366688633608" />
-      <entry key="H1" value="2.6336339522687657" />
-      <entry key="H2" value="4.414577023176566" />
-      <entry key="H4" value="6.554555011598265" />
-      <entry key="D1" value="9.999071700135802" />
-      <entry key="W1" value="10.848645995013804" />
+      <entry key="MS100" value="6.985416716347786E-23" />
+      <entry key="MS500" value="3.7335857836536425E-5" />
+      <entry key="S2" value="0.10122258007691275" />
+      <entry key="S5" value="0.6125690757892979" />
+      <entry key="S10" value="1.2463095445709411" />
+      <entry key="S30" value="2.1812212050787987" />
+      <entry key="S60" value="2.5509557616144316" />
+      <entry key="M2" value="2.8353354944471576" />
+      <entry key="M5" value="3.5532005472227968" />
+      <entry key="M10" value="4.3386287280213764" />
+      <entry key="M15" value="4.762773663624557" />
+      <entry key="M30" value="5.392276624768142" />
+      <entry key="H1" value="6.256908656553231" />
+      <entry key="H2" value="8.043755015075563" />
+      <entry key="H4" value="10.877838608003817" />
+      <entry key="D1" value="16.92534113209051" />
+      <entry key="W1" value="18.677560311168637" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.1604439249980226" />
-      <entry key="MS500" value="0.8136948437095035" />
-      <entry key="S2" value="2.3141907759708493" />
-      <entry key="S5" value="4.827303382839862" />
-      <entry key="S10" value="8.528376111611141" />
-      <entry key="S30" value="20.616862747865024" />
-      <entry key="S60" value="30.921576716496123" />
-      <entry key="M2" value="41.72035701111324" />
-      <entry key="M5" value="63.63165994889963" />
-      <entry key="M10" value="102.58137332820505" />
-      <entry key="M15" value="141.22381213711597" />
-      <entry key="M30" value="240.06676468857137" />
-      <entry key="H1" value="467.10117402858896" />
-      <entry key="H2" value="948.7238719546472" />
-      <entry key="H4" value="1562.7325617795723" />
-      <entry key="D1" value="2550.40636560426" />
-      <entry key="W1" value="2791.229614461389" />
+      <entry key="MS100" value="1.471707840440692" />
+      <entry key="MS500" value="1.8690827870544497" />
+      <entry key="S2" value="2.0361558415779255" />
+      <entry key="S5" value="3.026493378118116" />
+      <entry key="S10" value="5.166906899500709" />
+      <entry key="S30" value="9.487169935578365" />
+      <entry key="S60" value="11.489968665843485" />
+      <entry key="M2" value="13.962359940082173" />
+      <entry key="M5" value="31.583049687210323" />
+      <entry key="M10" value="69.79129449999871" />
+      <entry key="M15" value="102.37073049667262" />
+      <entry key="M30" value="189.54348091062457" />
+      <entry key="H1" value="379.9830332044767" />
+      <entry key="H2" value="812.7685856978637" />
+      <entry key="H4" value="1543.5661084414246" />
+      <entry key="D1" value="3162.1997218892643" />
+      <entry key="W1" value="3635.77964895457" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -104,6 +103,8 @@
     &quot;CidrDebugProfileConversion&quot;: &quot;true&quot;,
     &quot;CidrDebugProfileConversion262&quot;: &quot;true&quot;,
     &quot;LaTeX.ArchitectureIdea.tex.executor&quot;: &quot;Run&quot;,
+    &quot;LaTeX.DUMITRU_V2.executor&quot;: &quot;Run&quot;,
+    &quot;LaTeX.DUMITRU_V3.executor&quot;: &quot;Run&quot;,
     &quot;LaTeX.IdeiDeBaza.tex.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
@@ -128,7 +129,23 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.smartKeys&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="LaTeX.DUMITRU_V3">
+    <configuration name="DUMITRU_V3" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <option name="beforeRunCode" />
+      <option name="mainFilePath" value="$PROJECT_DIR$/DUMITRU_V3.tex" />
+      <steps>
+        <latexmkCompile id="e24422e8-8644-4fc7-8544-eb80bc2a3b44">
+          <option name="latexmkCompileMode" value="pdfLaTeX (PDF)" />
+        </latexmkCompile>
+        <pdfViewer id="1aa600ce-6f14-473d-bf3d-64533eebd888">
+          <option name="pdfViewerName" value="BUILT-IN-PDF-VIEWER" />
+          <selectedOptions>
+            <option name="viewer.requireFocus" />
+          </selectedOptions>
+        </pdfViewer>
+      </steps>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <steps>
         <latexmkCompile id="e24422e8-8644-4fc7-8544-eb80bc2a3b44" />
@@ -136,6 +153,10 @@
       </steps>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="LaTeX.IdeiDeBaza.tex" />
+      <item itemvalue="LaTeX.DUMITRU_V3" />
+    </list>
   </component>
   <component name="SelectedDebugProfileService">{
   &quot;profileIdByStamp&quot;: [],
