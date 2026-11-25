@@ -17,8 +17,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2006e8cf-d4aa-4cf4-986a-c98b09e69e68" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/IdeiDeBaza_tex.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/empty.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/images/empty.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/tex/empty.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,61 +36,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.5664419426478995" />
-      <entry key="MS500" value="1.892546988420539" />
-      <entry key="S2" value="1.9965517155225705" />
-      <entry key="S5" value="2.620822613031976" />
-      <entry key="S10" value="4.201653434024488" />
-      <entry key="S30" value="7.518170020014698" />
-      <entry key="S60" value="9.07226854602716" />
-      <entry key="M2" value="11.20601822640987" />
-      <entry key="M5" value="28.07809612796077" />
-      <entry key="M10" value="65.48752689768992" />
-      <entry key="M15" value="97.63574290866566" />
-      <entry key="M30" value="184.1696487805953" />
-      <entry key="H1" value="373.7397169032168" />
-      <entry key="H2" value="804.7359401011652" />
-      <entry key="H4" value="1532.6968657800533" />
-      <entry key="D1" value="3145.2767870528046" />
-      <entry key="W1" value="3617.102470557838" />
+      <entry key="MS100" value="1.3977682418774593" />
+      <entry key="MS500" value="1.8316918991581939" />
+      <entry key="S2" value="2.108602522386855" />
+      <entry key="S5" value="2.698275155463149" />
+      <entry key="S10" value="3.2066794332909274" />
+      <entry key="S30" value="5.4036539787937015" />
+      <entry key="S60" value="10.984049850193717" />
+      <entry key="M2" value="22.05136162746397" />
+      <entry key="M5" value="47.27111241025342" />
+      <entry key="M10" value="86.10424039237827" />
+      <entry key="M15" value="120.04610193667871" />
+      <entry key="M30" value="209.87388728562144" />
+      <entry key="H1" value="400.1054820277831" />
+      <entry key="H2" value="829.6312202854248" />
+      <entry key="H4" value="1559.1957200407853" />
+      <entry key="D1" value="3189.890853311661" />
+      <entry key="W1" value="3669.5603508899385" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="6.985416716347786E-23" />
-      <entry key="MS500" value="3.7335857836536425E-5" />
-      <entry key="S2" value="0.10122258007691275" />
-      <entry key="S5" value="0.6125690757892979" />
-      <entry key="S10" value="1.2463095445709411" />
-      <entry key="S30" value="2.1812212050787987" />
-      <entry key="S60" value="2.5509557616144316" />
-      <entry key="M2" value="2.8353354944471576" />
-      <entry key="M5" value="3.5532005472227968" />
-      <entry key="M10" value="4.3386287280213764" />
-      <entry key="M15" value="4.762773663624557" />
-      <entry key="M30" value="5.392276624768142" />
-      <entry key="H1" value="6.256908656553231" />
-      <entry key="H2" value="8.043755015075563" />
-      <entry key="H4" value="10.877838608003817" />
-      <entry key="D1" value="16.92534113209051" />
-      <entry key="W1" value="18.677560311168637" />
+      <entry key="MS100" value="8.138177832868277E-18" />
+      <entry key="MS500" value="3.9611693585544074E-4" />
+      <entry key="S2" value="0.20106238959019243" />
+      <entry key="S5" value="0.7825304466944755" />
+      <entry key="S10" value="1.261085152530161" />
+      <entry key="S30" value="2.194985072220843" />
+      <entry key="S60" value="3.1206631546584744" />
+      <entry key="M2" value="4.344850660573498" />
+      <entry key="M5" value="6.4945197368731264" />
+      <entry key="M10" value="8.27100754365371" />
+      <entry key="M15" value="9.197077503796788" />
+      <entry key="M30" value="10.477355257278417" />
+      <entry key="H1" value="11.725643022679499" />
+      <entry key="H2" value="13.71146389964107" />
+      <entry key="H4" value="16.66041524130345" />
+      <entry key="D1" value="22.870967547324188" />
+      <entry key="W1" value="24.66904201900813" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.471707840440692" />
-      <entry key="MS500" value="1.8690827870544497" />
-      <entry key="S2" value="2.0361558415779255" />
-      <entry key="S5" value="3.026493378118116" />
-      <entry key="S10" value="5.166906899500709" />
-      <entry key="S30" value="9.487169935578365" />
-      <entry key="S60" value="11.489968665843485" />
-      <entry key="M2" value="13.962359940082173" />
-      <entry key="M5" value="31.583049687210323" />
-      <entry key="M10" value="69.79129449999871" />
-      <entry key="M15" value="102.37073049667262" />
-      <entry key="M30" value="189.54348091062457" />
-      <entry key="H1" value="379.9830332044767" />
-      <entry key="H2" value="812.7685856978637" />
-      <entry key="H4" value="1543.5661084414246" />
-      <entry key="D1" value="3162.1997218892643" />
-      <entry key="W1" value="3635.77964895457" />
+      <entry key="MS100" value="1.3422480157776124" />
+      <entry key="MS500" value="1.8158007777378202" />
+      <entry key="S2" value="2.2348111928066414" />
+      <entry key="S5" value="3.2996977004817047" />
+      <entry key="S10" value="4.291711962376164" />
+      <entry key="S30" value="7.477336025503514" />
+      <entry key="S60" value="14.013424715302905" />
+      <entry key="M2" value="26.325779278304882" />
+      <entry key="M5" value="53.712007148932145" />
+      <entry key="M10" value="94.33353786799724" />
+      <entry key="M15" value="129.20897828654512" />
+      <entry key="M30" value="220.3282320548281" />
+      <entry key="H1" value="411.81486150139307" />
+      <entry key="H2" value="843.3301350694392" />
+      <entry key="H4" value="1575.846770386258" />
+      <entry key="D1" value="3212.7592673667323" />
+      <entry key="W1" value="3694.2289890887014" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -107,6 +110,7 @@
     "LaTeX.DUMITRU_V2.executor": "Run",
     "LaTeX.DUMITRU_V3.executor": "Run",
     "LaTeX.IdeiDeBaza.tex.executor": "Run",
+    "LaTeX.main.tex.executor": "Run",
     "LaTeX.teza.tex.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.RadMigrateCodeStyle": "true",
@@ -131,7 +135,15 @@
     "settings.editor.selected.configurable": "editor.preferences.smartKeys"
   }
 }]]></component>
-  <component name="RunManager" selected="LaTeX.teza.tex">
+  <component name="RunManager" selected="LaTeX.main.tex">
+    <configuration name="Unnamed (1)" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Notes">
+      <option name="beforeRunCode" />
+      <steps>
+        <latexmkCompile id="e24422e8-8644-4fc7-8544-eb80bc2a3b44" />
+        <pdfViewer id="1aa600ce-6f14-473d-bf3d-64533eebd888" />
+      </steps>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <steps>
         <latexmkCompile id="e24422e8-8644-4fc7-8544-eb80bc2a3b44" />
@@ -139,22 +151,9 @@
       </steps>
       <method v="2" />
     </configuration>
-    <configuration name="teza.tex" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
-      <option name="beforeRunCode" />
-      <option name="mainFilePath" value="$PROJECT_DIR$/Template-BIOSINF/teza.tex" />
-      <steps>
-        <latexmkCompile id="e24422e8-8644-4fc7-8544-eb80bc2a3b44">
-          <selectedOptions>
-            <option name="latexmk.customEngine" />
-          </selectedOptions>
-        </latexmkCompile>
-        <pdfViewer id="1aa600ce-6f14-473d-bf3d-64533eebd888" />
-      </steps>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="LaTeX.teza.tex" />
-      <item itemvalue="LaTeX.IdeiDeBaza.tex" />
+      <item itemvalue="LaTeX.main.tex" />
+      <item itemvalue="LaTeX.Unnamed (1)" />
     </list>
   </component>
   <component name="SelectedDebugProfileService">{

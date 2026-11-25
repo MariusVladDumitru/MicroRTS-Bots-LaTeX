@@ -1,13 +1,13 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="IdeiDeBaza.tex" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Notes">
+  <configuration default="false" name="main.tex" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="code">
     <option name="beforeRunCode" />
-    <option name="mainFilePath" value="$PROJECT_DIR$/docs/Notes/tex/IdeiDeBaza.tex" />
-    <option name="outputPath" value="$PROJECT_DIR$/out" />
+    <option name="mainFilePath" value="$PROJECT_DIR$/code/tex/main.tex" />
     <steps>
       <latexmkCompile id="e24422e8-8644-4fc7-8544-eb80bc2a3b44">
         <option name="latexmkCompileMode" value="pdfLaTeX (PDF)" />
       </latexmkCompile>
       <pdfViewer id="1aa600ce-6f14-473d-bf3d-64533eebd888">
+        <option name="pdfViewerName" value="BUILT-IN-PDF-VIEWER" />
         <selectedOptions>
           <option name="viewer.requireFocus" />
         </selectedOptions>
