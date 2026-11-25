@@ -1,20 +1,16 @@
+% Preamble
 \documentclass[12pt, a4paper, twoside, romanian]{teza-upb}
 
+% Thesis Settings
 \input{settings}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{document}
-
+% First Page
 \author{\hl{Prenume NUME}}
-
 \title{\hl{\textit{Titlul temei lucrării de disertație}}}
-
-
 \facultatea{Facultatea de Electronică, Telecomunicații și Tehnologia Informației}
 %\tiplucrare{licență}
 \tiplucrare{dizertație}
-
 \submissiondate{\hl{data}}
 \campus{Leu} 
 \program{BIOSINF}
@@ -22,49 +18,49 @@
 \titlulobtinut{Master}
 \advisor{\hl{Titlu Prenume NUME}} 
 
-
-
-
 \beforepreface
 
+% Lista Tabelelor
 \listoftables
 
-
+% Lista Figurilor
 \listoffigures
+
 \cleardoublepage
 
-\abbreviations{ 
+% Lista abrevierilor
+\abbreviations{
 CNN	& \textit{Convolutional Neural Network} (lb. en.; rețea neurală convoluțională)\\
 IA	& Inteligență artificială\\
 MFCC & \textit{Mel-frequency Cepstral Coefficient} (lb. en.; coeficient Mel-cepstral)\\
 RODeCAR & \textit{Romanian Deva Criminal Investigation Audio Recordings} (set de date) 
 }
+
 \cleardoublepage
 %\preface{}
 \afterpreface 
 
+% Setari probabil pentru continutul capitolelor.
 \pagenumbering{arabic}
 \pagestyle{plain}
 \setcounter{page}{1}
 
-\include{1-Introducere}
-\include{2-Notatii}
-\include{3-Tabele}
-\include{4-Citare.tex}
+% Continutul Capitolelor
+\include{Chapters/Ch1-Introducere}
+\include{Chapters/Ch2-Notatii}
+\include{Chapters/Ch3-Tabele}
+\include{Chapters/Ch4-Citare.tex}
 
 
-
+% Bibliografia
 %\bibliographystyle{unsrt}
 %\bibliography{referinte}
 
 \printbibliography[heading=bibintoc,title={BIBLIOGRAFIE}]
 
-
+% Nu stiu ce este acest \appendix - DE INTREBAT
 \appendix
-\include{Appendix1}
-
-
-
-
+%\include{Appendix1}
+\include{sup1}
 
 \end{document}
