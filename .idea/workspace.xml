@@ -16,13 +16,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2006e8cf-d4aa-4cf4-986a-c98b09e69e68" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/IdeiDeBaza_tex.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/empty.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/images/empty.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/tex/empty.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="2006e8cf-d4aa-4cf4-986a-c98b09e69e68" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
