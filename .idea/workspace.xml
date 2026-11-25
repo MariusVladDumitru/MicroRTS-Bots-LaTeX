@@ -18,6 +18,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2006e8cf-d4aa-4cf4-986a-c98b09e69e68" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/empty.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,54 +99,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;CidrDebugProfileConversion&quot;: &quot;true&quot;,
-    &quot;CidrDebugProfileConversion262&quot;: &quot;true&quot;,
-    &quot;LaTeX.ArchitectureIdea.tex.executor&quot;: &quot;Run&quot;,
-    &quot;LaTeX.DUMITRU_V2.executor&quot;: &quot;Run&quot;,
-    &quot;LaTeX.DUMITRU_V3.executor&quot;: &quot;Run&quot;,
-    &quot;LaTeX.IdeiDeBaza.tex.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/marius-vlad/Projects/MicroRTS-Bots-LaTeX&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.smartKeys&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "CidrDebugProfileConversion": "true",
+    "CidrDebugProfileConversion262": "true",
+    "LaTeX.ArchitectureIdea.tex.executor": "Run",
+    "LaTeX.DUMITRU_V2.executor": "Run",
+    "LaTeX.DUMITRU_V3.executor": "Run",
+    "LaTeX.IdeiDeBaza.tex.executor": "Run",
+    "LaTeX.teza.tex.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/marius-vlad/Projects/MicroRTS-Bots-LaTeX",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
+    "settings.editor.selected.configurable": "editor.preferences.smartKeys"
   }
-}</component>
-  <component name="RunManager" selected="LaTeX.DUMITRU_V3">
-    <configuration name="DUMITRU_V3" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
-      <option name="beforeRunCode" />
-      <option name="mainFilePath" value="$PROJECT_DIR$/DUMITRU_V3.tex" />
-      <steps>
-        <latexmkCompile id="e24422e8-8644-4fc7-8544-eb80bc2a3b44">
-          <option name="latexmkCompileMode" value="pdfLaTeX (PDF)" />
-        </latexmkCompile>
-        <pdfViewer id="1aa600ce-6f14-473d-bf3d-64533eebd888">
-          <option name="pdfViewerName" value="BUILT-IN-PDF-VIEWER" />
-          <selectedOptions>
-            <option name="viewer.requireFocus" />
-          </selectedOptions>
-        </pdfViewer>
-      </steps>
-      <method v="2" />
-    </configuration>
+}]]></component>
+  <component name="RunManager" selected="LaTeX.teza.tex">
     <configuration default="true" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <steps>
         <latexmkCompile id="e24422e8-8644-4fc7-8544-eb80bc2a3b44" />
@@ -153,9 +139,22 @@
       </steps>
       <method v="2" />
     </configuration>
+    <configuration name="teza.tex" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <option name="beforeRunCode" />
+      <option name="mainFilePath" value="$PROJECT_DIR$/Template-BIOSINF/teza.tex" />
+      <steps>
+        <latexmkCompile id="e24422e8-8644-4fc7-8544-eb80bc2a3b44">
+          <selectedOptions>
+            <option name="latexmk.customEngine" />
+          </selectedOptions>
+        </latexmkCompile>
+        <pdfViewer id="1aa600ce-6f14-473d-bf3d-64533eebd888" />
+      </steps>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="LaTeX.teza.tex" />
       <item itemvalue="LaTeX.IdeiDeBaza.tex" />
-      <item itemvalue="LaTeX.DUMITRU_V3" />
     </list>
   </component>
   <component name="SelectedDebugProfileService">{
