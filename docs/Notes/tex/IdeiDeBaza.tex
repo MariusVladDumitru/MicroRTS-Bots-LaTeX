@@ -3,11 +3,14 @@
 
 % Packages
 \usepackage{hyperref}
+\usepackage{color}
 \usepackage{graphics}
 \graphicspath{ {../images/} }
 
+% Title & author
 \title{Idei De bază pentru teza de Dizertație}
 \author{Marius-Vlad Dumitru}
+
 % Document
 \begin{document}
 \maketitle
@@ -21,7 +24,7 @@ Am fost mereu pasionat de jocurile video, iar RL/DRL se pretează pentru așa ce
 
 Prin urmare am intenționat să dezvolt agenți RL/DRL pentru un joc video.
 
-Prima provocare a fost alegera unui joc.
+Prima provocare a fost alegerea unui joc.
 
 \section{Alegerea Jocului}
 M-am orientat către un joc de strategie, de tip RTS(Real Time Strategy), întrucât acest tip de joc se pretează pentru studiul RL/DRL, iar personal am jucat câteva jocuri de strategie precum Starcraft, Starcraft 2, Warcraft 3, Age of Empires, etc.
@@ -38,63 +41,245 @@ Jocul pe care l-am ales să îl folosesc în experimente este MicroRTS, versiune
 
 Am ales acest joc din următoarele motive:
 \begin{enumerate}
-\item \textbf{Este mai simplu din punct de vedere al RL/DRL. Nu este la fel de complex precum Starcraft/Starcraft 2/Warcraft 3}. Fiind mai simplu, este mai ușor de lucrat cu el și posibilitatea de a greși este mai mică. Spațiile alea (acțiuni, stări, etc.) sunt mult mai mici față de Warcraft 3/Starcraft/Starcraft2.
-\item Deși mai simplu decât jocurile Blizzard, este "good enough" de complex pentru experimente de tip RL/DRL.
-\item Există paper-uri publicate folosing MicroRTS.
-\item Este open-source, deci codul sursă este disponibil și este permisă modificarea și redistribuția sa.
-\item Are deja boți predefiniți în joc pe care îi pot folosi.
-\item Este special construit pentru experimente de tip RL/DRL.
+    \item \textbf{Este mai simplu din punct de vedere al RL/DRL. Nu este la fel de complex precum Starcraft/Starcraft 2/Warcraft 3}. Fiind mai simplu, este mai ușor de lucrat cu el și posibilitatea de a greși este mai mică. Spațiile alea (acțiuni, stări, etc.) sunt mult mai mici față de Warcraft 3/Starcraft/Starcraft2.
+
+    \item Deși mai simplu decât jocurile Blizzard, este "good enough" de complex pentru experimente de tip RL/DRL.
+
+    \item Există paper-uri publicate folosind MicroRTS.
+
+    \item Este open-source, deci codul sursă este disponibil și este permisă modificarea și redistribuția sa.
+
+    \item Are deja boți predefiniți în joc pe care îi pot folosi.
+
+    \item Este special construit pentru experimente de tip RL/DRL.
 \end{enumerate}
 
 \section{Scopul Final}
 Urmăresc să studiez partea de RL/DRL prin efectuarea de diverse experimente folosind MicroRTS si agent de Rl/DRL care să joace meciuri în acest joc.
 
-Deci trebuie să efectuez diverse experimente.
+Prin urmare, este nevoie să efectuez diverse experimente.
+
+\section{Ce este un experiment}
+
+Un experiment înseamnă: \textbf{\color{red}{Unul sau mai multe meciuri de MicroRTS, jucate fie Agenți-Agenți, fie Agenți-AI default din joc, în diverse configurații.} }\\
+
+\underline{Parametrii de configurare ai unui experiment sunt}:
+\begin{enumerate}
+    \item \textbf{ Numele experimentului }. Acesta reprezintă si un ID care identifică unic experimentul, de tip string. Este obligatorie precizarea unui nume al experimentului, altfel sistemul dă eroare pentru că el identifică unic experientul.
+
+    \item \textbf{ Numărul de meciuri jucate în cadrul experimentului }. Este un număr întreg, $>=1$ (valoarea default 1).
+
+    \item \textbf{ Configurația proprie a fiecărui meci }.
+\end{enumerate}
+
+\underline{Parametrii de configurare ai unui meci sunt}:
+\begin{enumerate}
+    \item \textbf{ Numărul de jucători }(Număr întreg, $>=2$, valoarea default 2):
+
+    Momentan jocul este hardcodat pentru 2 jucători.
+
+    Fă lucrurile să funcționeze pentru 2 jucători și DACA MAI RĂMÂNE TIMP, fă modificările necesare pentru mai mult de 2 jucători.
+
+    Menține această idee, numărul de jucători, ca parametru pentru experimente, chiar dacă el va fi întotdeauna 2.
+
+    \item \textbf{Jucătorii în sine - cine sunt jucătorii ??}
+
+    Indică, în clar, cine este fiecare jucător în parte. Un jucător poate fi un agent dezvoltat în cadrul proiectului SAU un AI default din joc.
+
+    Dacă un jucător este AI-ul default din joc, gestionarea sa nu mai este făcută de modulul "Agenți" ci de Manager.
+
+    \item \textbf{ Harta}:
+
+        Harta este definită ca grid(celule).
+
+        O celulă din hartă poate avea 2 stări:
+        \begin{itemize}
+            \item \textbf{liberă}: Poate fi tranzitată de către o unitate a oricărui jucător, oricare din jucători poate construi o clădire proprie pe ea, oricare jucători pot construi zid pe ea(dacă au această posibilitate).
+
+            \item \textbf{ocupată}: Nu poate fi tranzitată de nicio unitate, conține o clădire, conține o unitate, conține un zid.
+        \end{itemize}
+
+        Zidurile de pe hartă nu permit tranzitarea de către unități și construcția de noi clădiri în interiorul celulelor pe care le ocupă.
+
+        O singură celulă poate fi ocupată doar de o singură entitate. Nu poate fi ocupată de două entități simultan. Prin entitate se înțelege zid, clădire, unitate.
+
+        Fiecare celulă este identificabilă prin linia și coloana sa, prin urmare o poziție este identificabilă prin linia și coloana sa, linia i, coloana j.
+
+        nr-cel-orizontală, nr întreg, $>=1$, nr-cel-verticală, nr întreg, $>=1$.
+
+        Dimensiunea hărții este exprimată în numărul de celule pe orizontală și numărul de celule pe verticală, nr-cel-orizontală x nr-cel-verticală.
+
+        Dimensiunea minimă a unei hărți: 1 x 1 (o singură celulă)
+
+        \textbf{Parametrii unei hărți sunt}:
+        \begin{enumerate}
+            \item \textbf{Numele Hărții}.
+
+                Este un string. Trebuie obligatoriu precizat altfel sistemul dă eroare.
+
+            \item \textbf{Numele fișierului hărții (inclusiv extensia)}.
+
+                Este un string. Trebuie obligatoriu precizat alfel sistemul dă eroare.
+
+            \item \textbf{Calea absolută către fișierul hărții (inclusiv numele fișierului hărții - exprimat anterior)}.
+
+                Este un obiect de tip pathlib.Path inițializat cu un string care conține calea absolută către fișierul hărții. Trebuie obligatoriu precizat altfel sistemul dă eroare.
+
+            \item \textbf{Dimensiunea hărții}.
+
+                Este nr-cel-orizontală x nr-cel-verticală.
+
+                Stocat ca un tuplu de 2 int-uri, nr întregi $>=1$. Le stochezi separat și pe cele 2 int-uri și cu ele formezi tuplul, (nr-cel-orizontală, nr-cel-verticală).
+
+                \underline{nr-cel-orizontală}: numărul de celule pe orizontală, nr întreg, $>=1$
+
+                \underline{nr-cel-verticală}: numărul de celule pe orizontală, nr întreg, $>=1$
+
+                Daca valorile nu sunt precizate, se consideră valoarea default 1.
+
+            \item \textbf{Configurația hărții }:
+                \begin{enumerate}
+                    \item \textbf{Pozițiile de la începutul meciului ale}:
+                    \begin{itemize}
+                        \item nodurilor de resurse.
+
+                        \item zidurilor.
+
+                        \item clădirilor inițiale ale jucătorilor.
+
+                        \item unităților inițiale jucătorilor.
+                    \end{itemize}
+
+                    \item \textbf{Valorile inițiale pentru}:
+                          \begin{itemize}
+                            \item Fiecare nod de resurse în parte. (câte resurse are fiecare nod în parte.). Probabil număr întreg pozitiv $>=1$, dar verifica în cod.
+
+                            \item Toate atributele clădirilor inițiale ale jucătorilor. (health, armor, etc. - nu stiu încă cât de mult se aplică dar sigur sigut trebuie să fie.) . Probabil numere întregi pozitive $>=1$, verifică în cod
+
+                            \item Toate atributele unităților inițiale ale jucătorilor. (health, mana, attack damage, attack speed, armor, etc. - la fel nu stiu cat de mult se aplica dar sigur trebuie să fie.). Probabil numbere întregi pozitive $>=1$, verifică în cod.
+                          \end{itemize}
+                \end{enumerate}
+        \end{enumerate}
+
+    \item \textbf{Win Conditions - Condițiile de câștig ale meciului}
+
+        Trebuiesc precizate obligatoriu pentru meciul curent altfel sistemul dă eroare.
+
+        Pot fi una sau mai multe.
+
+        Se vor folosi din constrângeri prin crearea unuia sau mai multe grupuri de constrângeri de "Win Conditions".
+
+        Cu alte cuvinte, "Win Conditions" sunt constrângeri care spun ce trebuie făcut de către jucători pentru a câștiga meciul.
+
+        Fiind un grup de constrângeri, pentru câștigarea meciului, trebuiesc îndeplinite toate condițiile din grup.
+
+        Dacă nu sunt îndeplinite toate condițiile sau condiția din grup atunci meciul se consideră pierdut, în caz contrar meciul se consideră câștigat.
+
+    \item \textbf{Constrângerea sau grupul de constrângeri aplicabile asupra meciului curent}.
+
+        Cu alte cuvinte, pentru fiecare meci, în parte, din experiment, trebuie precizat în clar ori o constrângere individuală ori un grup de constrângeri.
+
+        Nu este obligatoriu ca un meci să aibă precizate constrângeri dar este obligatoriu ca el să aibă precizate "Win conditions"
+
+\end{enumerate}
+
+Experimentele vor fi stocate sub formă de fișier .json.
+
+\section{Constrângeri}
+O constrângere înseamnă o singură condiție(limitare), impusă asupra:
+\begin{itemize}
+    \item Unui singur jucător.
+    \item Mai multor jucători.
+    \item Tuturor jucătorilor.
+    \item Hărții.
+\end{itemize}
+
+Constrângerile pot fi grupate în grupuri. Un grup de constrângeri poate conține una sau mai multe constrângeri individuale.
+
+În cadrul experimentelor, o singură constrângere individuală sau un singur grup de constrângeri pot fi aplicate asupra unui singur meci.
+
+Pentru un grup de constrângeri, toate constrângerile componente ale grupului trebuiesc îndeplinite cumulativ, nu în același timp.
+
+La modul gene
+
+Constrângerile unui grup de constrângeri nu trebuie să fie în conflict între ele.
+
+Exemplu de constrângeri individuale:
+\begin{itemize}
+\item Limită de timp pentru unul/mai mulți/toți jucătorii.
+\end{itemize}
 
 \section{Setup-ul experimental}
-\subsection{Ingredientele Setup-ului experimental}
-Setup-ul experimental este format din 3 ingrediente:
+\subsection{Elementele Setup-ului experimental}
+Setup-ul experimental este format din 3 elemente:
 \begin{enumerate}
 \item \textbf{Jocul MicroRTS sub formă de fișier .jar(MicroRTS.jar)}
+
 \item \textbf{Managerul}
+
 \item \textbf{Agenții}
 \end{enumerate}
 
-Cele 3 elemente ale setup-ului experimental comunică între ele prin rețea, adică protocolul TCP/UDP/TCP+UDP-IP (nu știu acum daca folosesc doar TCP, doar UDP sau TCP+UDP, dar știu sigur că vreau ca cele 3 elemente să comunice exclusiv prin rețea), pe baza modelului \textbf{client-server}, folosind sockets.
+Fiecare din cele 3 elemente ale setup-ului experimental comunică cu celelalte(exteriorul) numai prin rețea(TCP/UDP/TCP+UDP și IP. Nu știu acum dacă TCP, UDP, TCP+UDP).
 
-\includegraphics{ElementsCommunication.png}
+\includegraphics{ElementsCommunication}
 
-Din cauza faptului că cele 3 elemente comunică între ele prin rețea(TCP/UDP + IP), putem avea mai multe instanțe de MicroRTS-Agenți, ele formând perechi.
+Agenții rulează \textbf{OBLIGATORIU} pe un server separat, cu GPU, fie în Google Colab, fie pe un server propriu.
 
-Mai multe perechi MicroRTS-Agenti se pot conecta la același Manager pentru a rula, în paralel, mai multe experimente.
+MicroRTS și Managerul rulează pe același server sau fiecare separat pe alt server.
 
-Instanțele de perechi MicroRTS-Agenți nu fac schimb de informații între ele.
-
-Este un plan foarte ambition sa am multe instanțe de perechi MicroRTS-Agenți rulând în paralel. Este suficient să fac lucurile să meargă pentru o singură pereche MicroRTS-Agenți.
-
-% E o imagine care descrie treaba asta, vezi MicroRTS-Agents_Pair_Multiple_Instances.png.
-
-
-% Descrierea celor 3 elemente este aici, in acest enumerate.
-% Doar descriere succinta, ideile de bază
+Prin urmare, din punct de vedere al serverului(calculatorului) unde rulează cele 3 componente:
 \begin{enumerate}
-\item \textbf{Jocul MicroRTS.}
-
-Scurta Descriere MicroRTS
-
-\item \textbf{Managerul}
-
-Scurta Descriere Manager
-
-\item \textbf{Agenții}
-
-Scurta Descriere Agenti
+    \item Agenții rulează întotdeauna pe un server separat, altul decât cel/cele pe care se află celelalte 2 componente, OBLIGATORIU cu GPU. Acesta poate fi Google Colab sau server propriu.
+    \item MicroRTS și Managerul rulează pe același server, dar, din cauza folosirii TCP/UDP/IP, ar putea rula fiecare pe câte un server separat. Nu este neapărat nevoie de GPU (revin aici dacă este nevoie).
 \end{enumerate}
 
-% Some ideas that i don't want to forget
-%Aici e ideile mari boss
-%uite niste idei noi:
-%Suna misto:
-%Win Condition/ Win conditions
-%Constraints(constrangeri)
+Din cauza faptului că cele 3 elemente comunică între ele prin rețea(TCP/UDP + IP), putem avea mai multe instanțe de MicroRTS și mai multe instanțe de Agenți, ele formând perechi.
+
+Toate instanțele de MicroRTS și toate instanțele de Agenți se conectează la aceeași instanță de Manger, conform pozei pe care nu o pot pune în acest document pt. ca e prea mare, poza cu numele image/MicroRTS-Agents-Pair-Multiple-Instances.png.
+
+Pentru un experiment, indiferent câte configurații ale, o singură instanță de MicroRTS se împerechează(în teză poate e mai bine să scrii asociază) cu o singură instanță de Agenți.
+
+Instanțele de perechi MicroRTS-Agenți nu fac schimb de informații între ele, sunt izolate între ele.
+
+Este un plan foarte ambițios sa am multe instanțe de perechi MicroRTS-Agenți rulând în paralel.
+
+Este suficient să fac lucrurile să meargă pentru o singură pereche MicroRTS-Agenți, dar, pune te rog, ca parametru, numărul de perechi de instanțe MicroRTS-Agenți în cod, chiar daca el va avea întotdeauna valoarea 1.
+
+%\begin{enumerate}
+%    % MicroRTS
+%    \item \textbf{Jocul MicroRTS.}
+%        \begin{itemize}
+%            \item Jocul în sine, format .jar. Toate clasele sunt comprimate într-un singur fișier .jar
+%            \item Toată comunicarea cu exteriorul se face prin intermediul unui client intern TCP(UDP)/IP care se conectează la Manager.
+%            \item Executa simularea meciului de MicroRTS.
+%            \item Execută comenzile date de Manager(daca există).
+%            \item Execută comenzile date de jucători(agenți) pentru a juca meciul.
+%            \item Oferă agenților(jucătorilor) informații despre situația curentă de pe hartă.
+%            \item Oferă funcționalitate de Map Editor pentru crearea și editarea hărților. (probabil trebuie implementată de mine).
+%            \item Oferă jucători virtuali nativi(AI-urile din joc) scriși în java de care mă pot folosi. Vezi fișierele modului ai din joc + fișierele bin/lib/bots.
+%            \item În principiu rulează pe același calculator(server) ca si Managerul. Din cauza clientului intern de TCP(UDP)/IP, nimic nu ar împiedica ca acesta să ruleze pe serverul său propriu, separat de celelalte componente
+%        \end{itemize}
+%
+%    % Manager
+%    \item \textbf{Managerul}
+%        \begin{itemize}
+%            \item Reprezintă partea de comandă și control a proiectului.
+%            \item Oferă un server TCP(UPD)/IP intern la care se conectează toate instanțele de MicroRTS și Agenți.
+%            \item Formează perechi instanță MicroRTS <-> instanță
+%        \end{itemize}
+%
+%    % Agenti
+%    \item \textbf{Managerul}
+%        \begin{itemize}
+%            \item item1
+%        \end{itemize}
+%\end{enumerate}
+%
+%% Some ideas that i don't want to forget
+%%Aici e ideile mari boss
+%%uite niste idei noi:
+%%Suna misto:
+%%Win Condition/ Win conditions
+%%Constraints(constrangeri)
 \end{document}
