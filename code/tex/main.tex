@@ -40,26 +40,28 @@ RODeCAR & \textit{Romanian Deva Criminal Investigation Audio Recordings} (set de
 %\preface{}
 \afterpreface 
 
-% Setari probabil pentru continutul capitolelor.
+% Setări paginație.
 \pagenumbering{arabic}
 \pagestyle{plain}
 \setcounter{page}{1}
 
 % Continutul Capitolelor
-%\include{Chapters/Ch1-Introducere}
-%\include{Chapters/Ch2-Notatii}
-%\include{Chapters/Ch3-Tabele}
-%\include{Chapters/Ch4-Citare}
+\include{Chapters/Examples/Ch1-Introducere}
+\include{Chapters/Examples/Ch2-Notatii}
+\include{Chapters/Examples/Ch3-Tabele}
+\include{Chapters/Examples/Ch4-Citare}
 
 
-% Bibliografia
+% Bibliografia - posibil sa am nevoie de asta, nu stiu inca
 %\bibliographystyle{unsrt}
 %\bibliography{referinte}
 
-\printbibliography[heading=bibintoc,title={BIBLIOGRAFIE}]
+% Cu comanda asta printezi bibliografia
+% În Chapters/Examples/Ch4-Citare.ex este apelat \printbibliography[heading=none]
+%\printbibliography[heading=bibintoc,title={BIBLIOGRAFIE}]
 
 % Nu stiu ce este acest \appendix - DE INTREBAT
-\appendix
+%\appendix
 %\include{Appendix1}
 %\include{sup1}
 
