@@ -18,6 +18,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2006e8cf-d4aa-4cf4-986a-c98b09e69e68" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/tex/main.tex" beforeDir="false" afterPath="$PROJECT_DIR$/code/tex/main.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,23 +40,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0859254688642836" />
-      <entry key="MS500" value="2.9414089792377744" />
-      <entry key="S2" value="8.94897876383244" />
-      <entry key="S5" value="14.012555966634885" />
-      <entry key="S10" value="17.89461681007159" />
-      <entry key="S30" value="40.03956885656699" />
-      <entry key="S60" value="64.63273228560844" />
-      <entry key="M2" value="86.51916684090564" />
-      <entry key="M5" value="107.33219810245431" />
-      <entry key="M10" value="132.54150191335646" />
-      <entry key="M15" value="171.37120862110228" />
-      <entry key="M30" value="319.8121661850508" />
-      <entry key="H1" value="633.5181167260438" />
-      <entry key="H2" value="1238.3851951599731" />
-      <entry key="H4" value="2275.399270783172" />
-      <entry key="D1" value="6262.713043973084" />
-      <entry key="W1" value="8124.9113816673635" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0003955345740947" />
+      <entry key="S2" value="1.2735463796773308" />
+      <entry key="S5" value="2.2950343537002356" />
+      <entry key="S10" value="3.5234252127225463" />
+      <entry key="S30" value="8.892195515796207" />
+      <entry key="S60" value="15.674964880996308" />
+      <entry key="M2" value="26.11764619207914" />
+      <entry key="M5" value="50.0806613917548" />
+      <entry key="M10" value="87.13986368712145" />
+      <entry key="M15" value="125.45901849695778" />
+      <entry key="M30" value="257.9923629875821" />
+      <entry key="H1" value="555.2639393942131" />
+      <entry key="H2" value="1153.8082727164744" />
+      <entry key="H4" value="2202.236078090535" />
+      <entry key="D1" value="6294.931389018062" />
+      <entry key="W1" value="8233.443262061257" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -63,37 +64,37 @@
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
-      <entry key="S30" value="1.2215410095359078E-235" />
-      <entry key="S60" value="3.4950550918916566E-118" />
-      <entry key="M2" value="1.8695066439817054E-59" />
-      <entry key="M5" value="3.226196421695219E-24" />
-      <entry key="M10" value="1.7961617917519575E-12" />
-      <entry key="M15" value="1.477681592394303E-8" />
-      <entry key="M30" value="1.2388798797839112E-4" />
-      <entry key="H1" value="0.01750744354321787" />
-      <entry key="H2" value="0.5050550381969351" />
-      <entry key="H4" value="3.792435958732064" />
-      <entry key="D1" value="24.724094159488065" />
-      <entry key="W1" value="34.90566415803377" />
+      <entry key="S30" value="2.146971094930318E-254" />
+      <entry key="S60" value="1.4652546177815283E-127" />
+      <entry key="M2" value="3.827864440888107E-64" />
+      <entry key="M5" value="4.2971708374364126E-26" />
+      <entry key="M10" value="2.072962095729854E-13" />
+      <entry key="M15" value="3.502768763581936E-9" />
+      <entry key="M30" value="6.0317662403192795E-5" />
+      <entry key="H1" value="0.012216038302657264" />
+      <entry key="H2" value="0.4218834932763668" />
+      <entry key="H4" value="3.4661325645429795" />
+      <entry key="D1" value="24.356125753164086" />
+      <entry key="W1" value="34.83097200851373" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.04125703536645" />
-      <entry key="MS500" value="2.9112090276952642" />
-      <entry key="S2" value="8.921934904960725" />
-      <entry key="S5" value="13.995340242089489" />
-      <entry key="S10" value="17.883732177247516" />
-      <entry key="S30" value="40.03189221162089" />
-      <entry key="S60" value="64.6265297443172" />
-      <entry key="M2" value="86.5149518347827" />
-      <entry key="M5" value="107.32985528923385" />
-      <entry key="M10" value="132.53905451739536" />
-      <entry key="M15" value="171.36774156108066" />
-      <entry key="M30" value="319.80642304344303" />
-      <entry key="H1" value="633.5272012673415" />
-      <entry key="H2" value="1238.8798239515359" />
-      <entry key="H4" value="2279.1811880676146" />
-      <entry key="D1" value="6287.432387155039" />
-      <entry key="W1" value="8159.816181989119" />
+      <entry key="MS100" value="0.9592641193252643" />
+      <entry key="MS500" value="0.9921074811433159" />
+      <entry key="S2" value="1.2706089176357869" />
+      <entry key="S5" value="2.2923958102930104" />
+      <entry key="S10" value="3.519695980514488" />
+      <entry key="S30" value="8.881802053229869" />
+      <entry key="S60" value="15.66387851403447" />
+      <entry key="M2" value="26.105782817848574" />
+      <entry key="M5" value="50.067558817629234" />
+      <entry key="M10" value="87.12914423107465" />
+      <entry key="M15" value="125.44995712754343" />
+      <entry key="M30" value="257.98465908686865" />
+      <entry key="H1" value="555.2675942598178" />
+      <entry key="H2" value="1154.2200427042756" />
+      <entry key="H4" value="2205.691878708204" />
+      <entry key="D1" value="6319.282712481216" />
+      <entry key="W1" value="8268.273354593208" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -139,7 +140,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Latex&quot;
   }
 }</component>
-  <component name="RunManager" selected="LaTeX.IdeideBaza.tex">
+  <component name="RunManager" selected="LaTeX.main.tex">
     <configuration name="IdeideBaza.tex" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Notes">
       <option name="beforeRunCode" />
       <option name="mainFilePath" value="$PROJECT_DIR$/docs/Notes/tex/IdeiDeBaza.tex" />
