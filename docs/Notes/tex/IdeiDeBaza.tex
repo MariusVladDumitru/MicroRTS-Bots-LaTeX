@@ -86,7 +86,7 @@ Un experiment înseamnă: \textbf{\color{red}{Unul sau mai multe meciuri de Micr
 
     Indică, în clar, cine este fiecare jucător în parte. Un jucător poate fi un agent dezvoltat în cadrul proiectului SAU un AI default din joc.
 
-    Dacă un jucător este AI-ul default din joc, gestionarea sa nu mai este făcută de modulul "Agenți" ci de Manager.
+    Dacă un jucător este AI-ul default din joc, gestionarea sa nu mai este făcută de modulul "Agents Module" ci de Manager.
 
     \item \textbf{ Harta}:
 
@@ -211,40 +211,40 @@ Exemplu de constrângeri individuale:
 
 \section{Setup-ul experimental}
 \subsection{Elementele Setup-ului experimental}
-Setup-ul experimental este format din 3 elemente:
+Setup-ul experimental este format din 3 module:
 \begin{enumerate}
 \item \textbf{Jocul MicroRTS sub formă de fișier .jar(MicroRTS.jar)}
 
 \item \textbf{Managerul}
 
-\item \textbf{Agenții}
+\item \textbf{Modulul de Agenți(Agents Module)}
 \end{enumerate}
 
 Fiecare din cele 3 elemente ale setup-ului experimental comunică cu celelalte(exteriorul) numai prin rețea(TCP/UDP/TCP+UDP și IP. Nu știu acum dacă TCP, UDP, TCP+UDP).
 
 \includegraphics{ElementsCommunication}
 
-Agenții rulează \textbf{OBLIGATORIU} pe un server separat, cu GPU, fie în Google Colab, fie pe un server propriu.
+Agenții rulează \textbf{OBLIGATORIU} pe un server separat, cu GPU, fie în Google Colab, fie pe un server propriu, în cadrul modulului denumit "Agents Module".
 
 MicroRTS și Managerul rulează pe același server sau fiecare separat pe alt server.
 
 Prin urmare, din punct de vedere al serverului(calculatorului) unde rulează cele 3 componente:
 \begin{enumerate}
-    \item Agenții rulează întotdeauna pe un server separat, altul decât cel/cele pe care se află celelalte 2 componente, OBLIGATORIU cu GPU. Acesta poate fi Google Colab sau server propriu.
+    \item Agenții rulează întotdeauna pe un server separat, în cadrul modulului "Agents Module" altul decât cel/cele pe care se află celelalte 2 componente, OBLIGATORIU cu GPU. Acesta poate fi Google Colab sau server propriu.
     \item MicroRTS și Managerul rulează pe același server, dar, din cauza folosirii TCP/UDP/IP, ar putea rula fiecare pe câte un server separat. Nu este neapărat nevoie de GPU (revin aici dacă este nevoie).
 \end{enumerate}
 
-Din cauza faptului că cele 3 elemente comunică între ele prin rețea(TCP/UDP + IP), putem avea mai multe instanțe de MicroRTS și mai multe instanțe de Agenți, ele formând perechi.
+Din cauza faptului că cele 3 elemente comunică între ele prin rețea(TCP/UDP + IP), putem avea mai multe instanțe de MicroRTS și mai multe instanțe de "Agents Module" ele formând perechi.
 
-Toate instanțele de MicroRTS și toate instanțele de Agenți se conectează la aceeași instanță de Manger, conform pozei pe care nu o pot pune în acest document pt. ca e prea mare, poza cu numele image/MicroRTS-Agents-Pair-Multiple-Instances.png.
+Toate instanțele de MicroRTS și toate instanțele modulului de Agenți(Agents Module) se conectează la aceeași instanță de Manger, conform pozei pe care nu o pot pune în acest document pt. ca e prea mare, poza cu numele image/MicroRTS-Agents-Pair-Multiple-Instances.png.
 
-Pentru un experiment, indiferent câte configurații ale, o singură instanță de MicroRTS se împerechează(în teză poate e mai bine să scrii asociază) cu o singură instanță de Agenți.
+Pentru un experiment, indiferent câte configurații ale, o singură instanță de MicroRTS se împerechează(în teză poate e mai bine să scrii asociază) cu o singură instanță al modulului de agenți(Agents Module).
 
-Instanțele de perechi MicroRTS-Agenți nu fac schimb de informații între ele, sunt izolate între ele.
+Instanțele de perechi MicroRTS-"Modul Agenți" nu fac schimb de informații între ele, sunt izolate între ele.
 
-Este un plan foarte ambițios sa am multe instanțe de perechi MicroRTS-Agenți rulând în paralel.
+Este un plan foarte ambițios sa am multe instanțe de perechi MicroRTS- Modul Agenți rulând în paralel.
 
-Este suficient să fac lucrurile să meargă pentru o singură pereche MicroRTS-Agenți, dar, pune te rog, ca parametru, numărul de perechi de instanțe MicroRTS-Agenți în cod, chiar daca el va avea întotdeauna valoarea 1.
+Este suficient să fac lucrurile să meargă pentru o singură pereche MicroRTS-Modul Agenți, dar, pune te rog, ca parametru, numărul de perechi de instanțe MicroRTS- Modul Agenți în cod, chiar daca el va avea întotdeauna valoarea 1.
 
 %\begin{enumerate}
 %    % MicroRTS
@@ -265,7 +265,7 @@ Este suficient să fac lucrurile să meargă pentru o singură pereche MicroRTS-
 %    \item \textbf{Managerul}
 %        \begin{itemize}
 %            \item Reprezintă partea de comandă și control a proiectului.
-%            \item Oferă un server TCP(UPD)/IP intern la care se conectează toate instanțele de MicroRTS și Agenți.
+%            \item Oferă un server TCP(UPD)/IP intern la care se conectează toate instanțele de MicroRTS și Modulul de Agenți(Agents Module).
 %            \item Formează perechi instanță MicroRTS <-> instanță
 %        \end{itemize}
 %
