@@ -88,6 +88,16 @@ Un experiment înseamnă: \textbf{\color{red}{Unul sau mai multe meciuri de Micr
 
     Dacă un jucător este AI-ul default din joc, gestionarea sa nu mai este făcută de modulul "Agents Module" ci de Manager.
 
+    \item \textbf{Vreau să văd desfășurarea meciului ??}
+
+        Existența unui flag, în configurarea meciului, care îmi indică dacă vreau sau nu să văd desfășurarea meciului.
+
+        Dacă nu vreau să văd ce se întâmplă în meci atunci jocul va rula simularea ca headless, fără vizualizator, iar la final îmi va furniza rezultatele.
+
+        Dacă vreau să văd ce se întâmplă în meci, atunci jocul va porni o fereastră separata, un vizualizator, unde voi vedea ceea ce se întâmplă, iar la final va furniza rezultatele.Jocul are deja implementat un vizualizator, dar probabil, va trebui să îl modific.
+
+        VREAU SA ÎNCHID VIZUALIZATORUL LA FINAL DE MECI ???? PUN FLAG DACA VREAU SAU NU ASTA ????
+
     \item \textbf{ Harta}:
 
         Harta este definită ca grid(celule).
@@ -163,57 +173,110 @@ Un experiment înseamnă: \textbf{\color{red}{Unul sau mai multe meciuri de Micr
 
     \item \textbf{Win Conditions - Condițiile de câștig ale meciului}
 
-        Trebuiesc precizate obligatoriu pentru meciul curent altfel sistemul dă eroare.
-
-        Pot fi una sau mai multe.
-
-        Se vor folosi din constrângeri prin crearea unuia sau mai multe grupuri de constrângeri de "Win Conditions".
-
-        Cu alte cuvinte, "Win Conditions" sunt constrângeri care spun ce trebuie făcut de către jucători pentru a câștiga meciul.
-
-        Fiind un grup de constrângeri, pentru câștigarea meciului, trebuiesc îndeplinite toate condițiile din grup.
-
-        Dacă nu sunt îndeplinite toate condițiile sau condiția din grup atunci meciul se consideră pierdut, în caz contrar meciul se consideră câștigat.
+        Vezi următoarea secțiune legată de constrângeri.
 
     \item \textbf{Constrângerea sau grupul de constrângeri aplicabile asupra meciului curent}.
 
-        Cu alte cuvinte, pentru fiecare meci, în parte, din experiment, trebuie precizat în clar ori o constrângere individuală ori un grup de constrângeri.
-
-        Nu este obligatoriu ca un meci să aibă precizate constrângeri dar este obligatoriu ca el să aibă precizate "Win conditions"
+        Vezi următoarea secțiune legată de constrângeri.
 
 \end{enumerate}
 
-Experimentele vor fi stocate sub formă de fișier .json.
+Experimentele vor fi stocate sub formă de fișier .json. ??
+
+Poate și constrângerile + grupurile predefinite de constrângeri să fie .json ???
 
 \section{Constrângeri}
-O constrângere înseamnă o singură condiție(limitare), impusă asupra:
+\subsection{Ce este o constrângere}
+Am plecat de la ideea inițială din cerința temei de a impune anumite reguli/condiții/limitări agenților.
+
+\textbf{\color{red}{O constrângere înseamnă o singură condiție/regulă/limitare impusă care trebuie, obligatoriu, respectată. } }
+
+\textbf{\color{red}{CONSTRÂNGERE = condiție, regulă, limitare care trebuie respectată obligatoriu.} }
+
+Fiecare constrângere individuală este denumită sugestiv(tipul numelui este de tip String).
+
+\subsection{Grupuri predefinite de constrângeri}
+Două sau mai multe constrângeri individuale pot fi grupate într-un grup predefinit de constrângeri denumit sugestiv(tipul numelui este de tip String).
+
+Trebuie să găsești o modalitate prin care să indici că un nume dat aparține unei constrângeri individuale sau unui grup predefinit. Deci trebuie cumva să faci diferența dintre numele unei constrângeri individuale și numele unui grup predefinit de constrângeri, să indici cumva că una e individuală și cealaltă e un grup predefinit - Sa nu ai coliziuni de nume????.
+
+Un grup predefinit trebuie să aibă minim doi membri. DE CE? - pentru că nu are rost să formezi un grup predefinit numai cu un singur membru, acea constrângere o poți folosi individual acolo unde ai nevoie.
+
+Nu există limitare astupa numărului maxim de membri pe care un grup predefinit îl poate avea.
+
+Toate constrângerile unui grup predefinit trebuiesc îndeplinite cumulativ(deci fiecare pe rând, nu trebuie toate să fie validate în același moment de timp t).
+
+Toate constrângerile unui grup predefinit nu trebuie să fie în conflict între ele.
+
+În cadrul experimentelor, pentru fiecare meci în parte, pot alege să asociez, fie nicio constrângere (fără condiții/limitări/reguli), fie o singură constrângere individuală, fie un sigur grup predefinit de constrângeri.
+
+Asocierea, pentru meciul curent, o fac prin folosirea numelui constrângerii individuale sau a grupului predefinit.
+
+\subsection{Win Conditions - condiții/reguli de câștig ale meciului}
+Am nevoie de o modalitate prin care trebuie să decid cum va fi câștigat meciul. Din cauza faptului că, oricum am acest sistem de constrângeri, m-am gândit că ar fi oportun să îl folosesc și pentru condițiile de Win ale meciului, fărâ a mai fi nevoie de alt sitem.
+
+Prin urmare \textbf{ \color{red}{Win Conditions (condițiile, regulile de câștig ale meciului) - reprezintă un grup predefinit de constrângeri care indică ceea ce trebuie făcut pentru câștigarea meciului.} }
+
+Se aplică toate regulile prezentate pentru grupurile predefinite de constrângeri, cu excepțiile:
+\begin{itemize}
+    \item Un grup predefinit de tip Win Conditions poate avea minim un membru. DE CE ?? - pentru că există situații unde vreau numai o singură condiție de win, iar așa o pot opține ușor.
+    \item Un grup predefinit de tip Win Conditions trebuie OBLIGATORIU asociat fiecărui meci dintr-un experiment. DE CE ?? - altfel cum aș ști cum se câștigă meciul, cum aș sti când trebuie să mă opresc.
+    \item În proiect nu există un singur grup predefinit de tip Win Conditions, pot avea oricâte vreau, din acest motiv, trebuie găsită o modalitate de a face diferența dintre grupurile predefinite de tip Win Conditions și toate celelalte.
+\end{itemize}
+
+Pentru fiecare meci din cadrul unui experiment, trebuie obligatoriu să asociez un grup predefinit de tip Win Condition și optional o constrângere sau un grup predefinit de constrângeri.
+
+\subsection{Idei de constrângeri}
+
+O constrângere(regulă, condiție, limitare) poate să fie impusă asupra[ MAI TREBUIE LUCRAT ]:
 \begin{itemize}
     \item Unui singur jucător.
+
     \item Mai multor jucători.
+
     \item Tuturor jucătorilor.
-    \item Hărții.
+
+    \item Hărții. - nu sunt foarte sigur ce ar însemna concret dar o las totuși aici.
+
+    \item Meciului. - nu sunt foarte sigur ce ar însemna concret, dar o las totuși aici.
+
+    \item Simulării.
 \end{itemize}
 
-Constrângerile pot fi grupate în grupuri. Un grup de constrângeri poate conține una sau mai multe constrângeri individuale.
-
-În cadrul experimentelor, o singură constrângere individuală sau un singur grup de constrângeri pot fi aplicate asupra unui singur meci.
-
-Pentru un grup de constrângeri, toate constrângerile componente ale grupului trebuiesc îndeplinite cumulativ, nu în același timp.
-
-La modul gene
-
-Constrângerile unui grup de constrângeri nu trebuie să fie în conflict între ele.
-
-Exemplu de constrângeri individuale:
+Constrângeri (idei)[ MAI TREBUIE LUCRAT AICI ]:
 \begin{itemize}
-\item Limită de timp pentru unul/mai mulți/toți jucătorii.
+    \item Limită de timp. (asupra cui ??)
+
+    \item Limită de resurse. (asupra cui ??)
+
+    \item Limită de unități. (asupra cui ??)
+
+    \item Limită de clădiri. (asupra cui ??)
+
+    \item Limita de cicluri (pasi de simulare).
+
+    \item Distrugerea anumitor tipuri de clădiri.
+
+    \item Distrugerea unui număr x dat de unități/clădiri.
+
+    \item Cine epuizează primul un nod de resurse dat.
+
+    \item Distrugerea tuturor clădirilor și unităților inamice.
+
+    \item Valorile default ale atributelor clădirilor(hp, armor, etc.) și/sau unităților(hp, speed, attack, attack speed, armor, etc.) să fie altele.
+
+    \item  SI ALTELE (mai gândește te)
 \end{itemize}
+
+Nu în ultimul rând, constrângerile for fi gestionate de către Manager.
+
+NOTĂ: FĂ SĂ MEARGĂ, în etapa inițială, constrângerile de tip win condition foarte simple, gen distrugerea tuturor clădirilor și unităților inamicului, etc., după aceea orientează-te către altele mai sofisticate. STABILEȘTE-ȚI o listă inițială de constrângeri + O ordine de implementare. Mergi de la simplu la complex.
 
 \section{Setup-ul experimental}
 \subsection{Elementele Setup-ului experimental}
 Setup-ul experimental este format din 3 module:
 \begin{enumerate}
-\item \textbf{Jocul MicroRTS sub formă de fișier .jar(MicroRTS.jar)}
+\item \textbf{Jocul MicroRTS sub formă de fișier .jar, MicroRTS.jar}
 
 \item \textbf{Managerul}
 
@@ -224,28 +287,103 @@ Fiecare din cele 3 elemente ale setup-ului experimental comunică cu celelalte(e
 
 \includegraphics{ElementsCommunication}
 
-Agenții rulează \textbf{OBLIGATORIU} pe un server separat, cu GPU, fie în Google Colab, fie pe un server propriu, în cadrul modulului denumit "Agents Module".
-
-MicroRTS și Managerul rulează pe același server sau fiecare separat pe alt server.
-
-Prin urmare, din punct de vedere al serverului(calculatorului) unde rulează cele 3 componente:
+\subsection{Unde rulează cele 3 module}
 \begin{enumerate}
     \item Agenții rulează întotdeauna pe un server separat, în cadrul modulului "Agents Module" altul decât cel/cele pe care se află celelalte 2 componente, OBLIGATORIU cu GPU. Acesta poate fi Google Colab sau server propriu.
     \item MicroRTS și Managerul rulează pe același server, dar, din cauza folosirii TCP/UDP/IP, ar putea rula fiecare pe câte un server separat. Nu este neapărat nevoie de GPU (revin aici dacă este nevoie).
 \end{enumerate}
 
-Din cauza faptului că cele 3 elemente comunică între ele prin rețea(TCP/UDP + IP), putem avea mai multe instanțe de MicroRTS și mai multe instanțe de "Agents Module" ele formând perechi.
+\subsection{Mai multe instanțe}
+Cu scopul de a rula mai multe experimente în paralel, putem instanția mai multe copii de MicroRTS și mai multe copii de "Agents Module"(modulul de Agenți).
 
-Toate instanțele de MicroRTS și toate instanțele modulului de Agenți(Agents Module) se conectează la aceeași instanță de Manger, conform pozei pe care nu o pot pune în acest document pt. ca e prea mare, poza cu numele image/MicroRTS-Agents-Pair-Multiple-Instances.png.
+Managerul are întotdeauna o singură instanță unică. [ AS PUTEA SCHIMBA ASTA ÎN VIITOR ].
 
-Pentru un experiment, indiferent câte configurații ale, o singură instanță de MicroRTS se împerechează(în teză poate e mai bine să scrii asociază) cu o singură instanță al modulului de agenți(Agents Module).
+La acestă instanță unică a Managerului se conectează toate instanțele celorlalte două module, MicroRTS și "Agents-Module"
 
-Instanțele de perechi MicroRTS-"Modul Agenți" nu fac schimb de informații între ele, sunt izolate între ele.
+%\includegraphics{MicroRTS-Agents-Pair-Multiple-Instances.png} - prea mare pe pagină
+
+Putem asocia instanțele de MicroRTS și instanțele de "Agents Module" în perechi de tip MicroRTS-"Agents Module".
+
+O instanță unică de MicroRTS formează pereche cu o instanță unică a modulului "Agents Module".
+
+Fiecare pereche de instanțe MicroRTS-"Agents Module" este unică și izolată, nu fac schimb de informații cu celelalte perechi.
+
+Un singur experiment rulează pe o singură pereche unică si izolată de MicroRTS-"Agents Module".
+
+Astfel, pentru a rula mai multe experimente în paralel, voi forma mai multe perechi unice și izolate MicroRTS-"Agents Module" care for rula fiecare câte un experiment.\\
+
+NOTĂ:\\
 
 Este un plan foarte ambițios sa am multe instanțe de perechi MicroRTS- Modul Agenți rulând în paralel.
 
-Este suficient să fac lucrurile să meargă pentru o singură pereche MicroRTS-Modul Agenți, dar, pune te rog, ca parametru, numărul de perechi de instanțe MicroRTS- Modul Agenți în cod, chiar daca el va avea întotdeauna valoarea 1.
+Este suficient să fac lucrurile să meargă pentru o singură pereche MicroRTS-Modul Agenți, dar, pune te rog, ca parametru, numărul de perechi de instanțe MicroRTS- Modul Agenți în cod, chiar daca el va avea întotdeauna valoarea 1. De asemenea pune cod care instantiaza perechi MicroRTS-Agents module in functie de parametru.
 
+Deci pune tot codul necesar pentru paralelizarea experimentelor chiar daca in practica va rula cu valoarea 1.
+
+ASta este o prioritate de tip low, nu trebuie sa pierzi o gramanda de timp pe asta, in cel mai rau caz, hardcodeaza pentru 1 experiment, fara paralelizare si aia este.
+
+Treaba asta e nice to have, dar merge si fara, sunt multe alte lucruri multi mai importate decat asta, deci nu are rost sa pierzi multi timp pe ea.
+
+\subsection{Modulul MicroRTS - descriere generală}
+Modulul MicroRTS este format din însuși jocul MicroRTS, in format .jar - MicroRTS.jar.
+
+Ca modul,la nivel macro, are trei mari roluri:
+\begin{itemize}
+    \item Să execute simularea.
+    \item Să ofere suport pentru vizualizarea meciului în timp real.
+    \item Să îmi ofere suport pentru un Map Editor - să pot crea și modifica hărți (nu cred că are funcționalizatea asta implementată dar iese ușor din vizualizatorul deja implementat).
+\end{itemize}
+
+Pot exista situații în care doar vreau să execut simularea și să obțin rezultatele finale și situații în care vreau să și văd ce se întâmplă în timpul meciului, jocul oferă suport pentru ambele.
+
+In configurația experimentului, pentru fiecare meci în parte, trebuie să precizez dacă vreau să văd sau nu desfășurarea meciului.\\
+
+Funcțiile jocului MicroRTS(descriere generală):
+\begin{enumerate}
+    \item \textbf{ \color{red}{Să execute simularea în timp real:} }
+        \begin{enumerate}
+            \item Să execute simularea headless (fără vizualizator).
+
+            \item Să execute simularea cu vizualizator.
+
+            \item Să inițializeze meciul, conform datelor primite din exterior:
+                \begin{enumerate}
+                    \item Să inițializeze harta:
+                        \begin{itemize}
+                            \item Să încarce harta pe baza numelui și locaței hărții.
+
+                            \item Numărul de jucători. Este specificat de hartă. Fiecare hartă este făcută pentru un anumit număr de jucători.
+
+                            \item Să încarce pozițiile inițiale ale: zidurilor, resurselor, clădirilor și unităților inițiale ale tuturor jucătorilor (geografia hărții).
+
+                            \item Să inițializeze valorile inițiale ale: zidurilor(nu cred ca zidurile au orice fel de valor dar las asa), resurse.
+                        \end{itemize}
+
+                    \item Să inițializeze jucătorii:
+                        \begin{itemize}
+                            \item Asocierea Player n - AI("Agents Module + Java). Trebuie să știe de la care AI se asteaptă să primească comenzi ca să joace jucătorul n.
+
+                            \item Să inițializeze valorile inițiale ale: atributelor clădirilor, atributelor unităților conform constrângerilor meciului(daca există), hărții(dacă există), valori default. NOTA: trebuie să văd aici daca le primeste complet din exterior sau calculează el ceva.
+                        \end{itemize}
+                \end{enumerate}
+
+
+           \item Să primească și să execute comenzile de stare de la Manager. (buclă)
+
+           \item Să primească și să execute comenzile de jucat de la agenți. (buclă)
+
+           \item Să transmită agenților noul gamestate de fiecare dată când se modifică. (buclă)
+
+        \end{enumerate}
+
+    \item \textbf{ \color{red}{Să ofere un vizualizator pentru a vedea meciul în timp real.} }
+
+    \item \textbf{ \color{red}{Să ofere funcționalitate de Map Editor - creare hărți noi, modificare hărți existente.} }
+
+    \item Să ofere AI-urile incluse în joc(scrie în java), sub formă de jucători virtuali pentru meciuri.
+
+    \item Să ofere un client intern prin care se face comunicarea cu exteriorul.
+\end{enumerate}
 %\begin{enumerate}
 %    % MicroRTS
 %    \item \textbf{Jocul MicroRTS.}
